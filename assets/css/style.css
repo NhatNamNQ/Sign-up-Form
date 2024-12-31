@@ -136,7 +136,24 @@ button {
     color: white;
     border: none;
     border-radius: 3px;
+    cursor: pointer;
 }
-.footer span {
+.footer a {
     color: #596D48;
+    text-decoration: none;
+}
+
+/* effects */
+button:hover {
+    background-color: #5e8041;
+}
+
+input[type='password']:invalid {
+    border: 1px solid red;
+}
+
+input[type='text']:focus {
+    outline: none;
+    border: 1px solid blue !important;
+    box-shadow: 0 0 10px rgba(8, 100, 199, 0.2);
 }
